@@ -32,6 +32,11 @@ body {
   background-position: center;
   scale: 1.08;
 }
+
+.tech-div-container{
+  scale: 1;
+}
+
 .service-container {
   background-image: url('/cielo-estrellado.avif');
   background-size: contain;
