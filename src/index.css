@@ -26,3 +26,15 @@ body {
   @apply max-w-7xl mx-auto px-4;
 }
 
+.tech-container {
+  background-image: url('/imagen-bolita2.png');
+  background-size: cover;
+  background-position: center;
+  scale: 1.08;
+}
+.service-container {
+  background-image: url('/cielo-estrellado.avif');
+  background-size: contain;
+  background-position: center;
+  scale: 1.08;
+}

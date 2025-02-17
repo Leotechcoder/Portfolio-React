@@ -15,7 +15,7 @@ const ServiceCard = ({ service, delay }) => (
     <p className="text-gray-600 text-center">{service.description}</p>
     <div className="mt-6">
       <button className="w-full bg-primary text-white py-2 px-4 rounded-full hover:bg-primary-dark transition-colors duration-300 ease-in-out ">
-        Learn More
+        Ver más
       </button>
     </div>
   </motion.div>
@@ -25,13 +25,13 @@ const Services = () => {
   const services = useServices()
 
   return (
-    <section id="services" className="container py-20 bg-gray-500">
+    <section id="services" className="container py-20 service-container">
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold mb-4 text-gray-800">
-          My <span className="text-primary">Services</span>
+        <h2 className="text-4xl font-bold mb-4 text-slate-600">
+          Mis <span className="text-primary">Servicios</span>
         </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-          Elevate your digital presence with our top-notch design and development services.
+        <p className="text-gray-200 max-w-2xl mx-auto text-lg">
+        Eleve su presencia digital con servicios de diseño y desarrollo de primer nivel.
         </p>
       </div>
 

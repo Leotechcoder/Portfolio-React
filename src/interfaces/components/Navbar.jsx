@@ -1,4 +1,3 @@
-"use client"
 
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
@@ -7,7 +6,7 @@ import { motion } from "framer-motion"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  const navItems = ["Home", "About", "Service", "Resume", "Project", "Contact"]
+  const navItems = ["Inicio", "Sobre mi", "Servicios", "Proyectos", "Contactame"]
 
   return (
     <nav className="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-sm">
@@ -18,7 +17,7 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             className="text-2xl font-bold text-primary"
           >
-            JCREA
+            AWAM
           </motion.div>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -30,7 +29,7 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
                 className={`text-sm font-medium hover:text-primary transition-colors ${
-                  item === "Home" ? "bg-primary text-white px-4 py-2 rounded-full" : ""
+                  item === "Inicio" ? "bg-primary text-white px-4 py-2 rounded-full" : ""
                 }`}
               >
                 {item}

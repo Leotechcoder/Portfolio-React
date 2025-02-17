@@ -14,18 +14,18 @@ const Hero = () => {
           className="space-y-6"
         >
           <div className="inline-block">
-            <span className="bg-[#FF6B00]/10 text-[#FF6B00] px-4 py-2 rounded-full">Hello! 👋</span>
+            <span className="bg-[#FF6B00]/10 text-[#FF6B00] px-4 py-2 rounded-full">Hola!</span>
           </div>
 
           <h1 className="text-5xl md:text-6xl font-bold text-[#1A1A1A]">
-            I'm <span className="text-[#FF6B00]">Jerry</span>,
+            Soy <span className="text-[#FF6B00]">Leonardo</span>,
             <br />
-            Product Designer
+            Full Stack Developer
           </h1>
 
           <div className="bg-[#1A1A1A]/5 p-4 rounded-lg">
             <p className="text-sm italic text-[#1A1A1A]">
-              "Jerry's Exceptional product design made our website's success. Highly Recommended"
+              "Diseño de software excepcional hecho a la medida de tu negocio. Altamente recomendado"
             </p>
           </div>
 
@@ -35,26 +35,26 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
               className="bg-[#FF6B00] text-white px-6 py-3 rounded-full font-medium"
             >
-              Portfolio
+              Linkedin
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="border-2 border-[#FF6B00] text-[#FF6B00] px-6 py-3 rounded-full font-medium"
             >
-              Hire me
+              Repositorios
             </motion.button>
           </div>
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ scale: 0.2, rotate: 360, opacity: 0 }}
           animate={{ scale: 1, rotate: 0, opacity: 1 }}
           transition={{ type: 'spring', stiffness: 200, damping: 9 }}
           className="relative w-full h-[400px]"
-        >
+        > */}
           <AnimatedTechItems />
-        </motion.div>
+        {/* </motion.div> */}
       </div>
     </section>
   );
