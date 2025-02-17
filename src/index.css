@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary: 24 100% 50%; /* Orange */
+  --primary-dark: 24 100% 40%; /* Darker Orange */
+  --secondary: 220 13% 10%; /* Dark Gray */
+  --background: 0 0% 100%; /* White */
+  --foreground: 220 13% 10%; /* Dark Gray */
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-secondary;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
