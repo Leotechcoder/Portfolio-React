@@ -27,7 +27,7 @@ body {
 }
 
 .tech-container {
-  background-image: url('/imagen-bolita2.png');
+  background-image: url('/imagen-bolita-bg-transparent.png');
   background-size: cover;
   background-position: center;
   scale: 1.08;
