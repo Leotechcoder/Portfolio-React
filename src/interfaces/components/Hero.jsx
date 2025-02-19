@@ -1,11 +1,11 @@
 "use client"
 
-import { motion } from "framer-motion";
-import AnimatedTechItems from "./AnimatedItems";
+import { motion } from "framer-motion"
+import AnimatedTechItems from "./AnimatedItems"
 
 const Hero = () => {
   return (
-    <section className="container min-h-screen pt-20 flex items-center">
+    <section className="container mx-auto px-4 sm:px-6 lg:px-8 min-h-screen pt-20 flex items-center md:mb-4">
       <div className="grid md:grid-cols-2 gap-8 items-center">
         <motion.div
           initial={{ opacity: 0, x: -50, scale: 0 }}
@@ -14,50 +14,46 @@ const Hero = () => {
           className="space-y-6"
         >
           <div className="inline-block">
-            <span className="bg-[#FF6B00]/10 text-[#FF6B00] px-4 py-2 rounded-full">Hola!</span>
+            <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm sm:text-base">Hola!</span>
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold text-[#1A1A1A]">
-            Soy <span className="text-[#FF6B00]">Leonardo</span>,
-            <br />
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-secondary">
+            Soy <span className="text-primary">Leonardo</span>,
+            <br className="hidden sm:block" />
             Full Stack Developer
           </h1>
 
-          <div className="bg-[#1A1A1A]/5 p-4 rounded-lg">
-            <p className="text-sm italic text-[#1A1A1A]">
+          <div className="bg-secondary/5 p-4 rounded-lg">
+            <p className="text-xs sm:text-sm italic text-secondary">
               "Diseño de software excepcional hecho a la medida de tu negocio. Altamente recomendado"
             </p>
           </div>
 
-          <div className="flex gap-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-[#FF6B00] text-white px-6 py-3 rounded-full font-medium"
+              className="bg-primary text-white px-6 py-3 rounded-full font-medium text-sm sm:text-base w-full sm:w-auto"
             >
               Linkedin
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="border-2 border-[#FF6B00] text-[#FF6B00] px-6 py-3 rounded-full font-medium"
+              className="border-2 border-primary text-primary px-6 py-3 rounded-full font-medium text-sm sm:text-base w-full sm:w-auto"
             >
               Repositorios
             </motion.button>
           </div>
         </motion.div>
 
-        {/* <motion.div
-          initial={{ scale: 0.2, rotate: 360, opacity: 0 }}
-          animate={{ scale: 1, rotate: 0, opacity: 1 }}
-          transition={{ type: 'spring', stiffness: 200, damping: 9 }}
-          className="relative w-full h-[400px]"
-        > */}
+        <div className="w-full h-full flex justify-center items-center">
           <AnimatedTechItems />
-        {/* </motion.div> */}
+        </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
+

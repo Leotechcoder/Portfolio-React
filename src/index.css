@@ -27,10 +27,11 @@ body {
 }
 
 .tech-container {
-  background-image: url('/imagen-bolita-bg-transparent.png');
-  background-size: cover;
+  background-image: url('/mundo.png');
+  background-size: contain;
   background-position: center;
-  scale: 1.08;
+  scale: 1.25;
+  padding-bottom: 25px;
 }
 
 .tech-div-container{
@@ -41,5 +42,5 @@ body {
   background-image: url('/cielo-estrellado.avif');
   background-size: contain;
   background-position: center;
-  scale: 1.08;
+  scale: 1;
 }

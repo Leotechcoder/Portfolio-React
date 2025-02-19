@@ -4,10 +4,6 @@ import Services from "../components/Services"
 
 const HomePage = () => {
 
-const services = {
-
-}
-
   return (
     <main className="min-h-screen">
       <Navbar />

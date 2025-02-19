@@ -1,3 +1,4 @@
+"use client"
 
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
@@ -10,17 +11,17 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-sm">
-      <div className="container py-4">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex items-center justify-between">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="text-2xl font-bold text-primary"
+            className="text-xl sm:text-2xl font-bold text-primary"
           >
             AWAM
           </motion.div>
 
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-2 xl:space-x-4">
             {navItems.map((item, index) => (
               <motion.a
                 key={item}
@@ -28,8 +29,8 @@ const Navbar = () => {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className={`text-sm font-medium hover:text-primary transition-colors ${
-                  item === "Inicio" ? "bg-primary text-white px-4 py-2 rounded-full" : ""
+                className={`text-sm xl:text-base font-medium hover:text-primary transition-colors px-2 py-1 ${
+                  item === "Inicio" ? "bg-primary text-white rounded-full" : ""
                 }`}
               >
                 {item}
@@ -37,13 +38,13 @@ const Navbar = () => {
             ))}
           </div>
 
-          <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+          <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X /> : <Menu />}
           </button>
         </div>
 
         {isOpen && (
-          <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="md:hidden py-4">
+          <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="lg:hidden py-4">
             {navItems.map((item) => (
               <a
                 key={item}
