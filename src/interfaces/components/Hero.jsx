@@ -11,7 +11,7 @@ const Hero = () => {
           initial={{ opacity: 0, x: -50, scale: 0 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 0.9 }}
-          className="space-y-6"
+          className="space-y-6 p-5 scale-95"
         >
           <div className="inline-block">
             <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm sm:text-base">Hola!</span>
@@ -19,8 +19,9 @@ const Hero = () => {
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-secondary">
             Soy <span className="text-primary">Leonardo</span>,
-            <br className="hidden sm:block" />
-            Full Stack Developer
+            <br className="sm:block text-xl" />
+            Full Stack 
+            <span className="block text-5xl">Developer</span>
           </h1>
 
           <div className="bg-secondary/5 p-4 rounded-lg">
@@ -33,14 +34,14 @@ const Hero = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-primary text-white px-6 py-3 rounded-full font-medium text-sm sm:text-base w-full sm:w-auto"
+              className="w-3/4 mx-auto bg-primary text-white px-6 py-3 rounded-full font-medium text-md sm:text-base sm:w-auto"
             >
               Linkedin
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="border-2 border-primary text-primary px-6 py-3 rounded-full font-medium text-sm sm:text-base w-full sm:w-auto"
+              className="w-3/4 mx-auto border-2 border-primary text-primary px-6 py-3 rounded-full font-medium text-md sm:text-base"
             >
               Repositorios
             </motion.button>

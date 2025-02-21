@@ -38,7 +38,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 p-3 px-10">
           {services.map((service, index) => (
             <ServiceCard key={service.id} service={service} delay={index * 0.2} />
           ))}

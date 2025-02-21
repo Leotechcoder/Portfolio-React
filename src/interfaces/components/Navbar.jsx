@@ -49,7 +49,7 @@ const Navbar = () => {
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="block py-2 text-sm font-medium hover:text-primary transition-colors"
+                className="block py-2 text-md font-medium hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {item}
